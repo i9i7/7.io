@@ -1,0 +1,31 @@
+body {
+    padding: 80px 0 0 40px;
+    background: #ffffff;
+    text-align: center;
+}
+
+pre {
+    color: #002f6c;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+#tagline {
+    color: grey;
+    font-weight: 100;
+}
+
+#pow-txt {
+    display: none;
+    font-weight: 100;
+    color: #e3e3e3 !important;
+}
+
+
+
+
+
+
+
+
