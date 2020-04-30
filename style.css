@@ -9,7 +9,9 @@
    
 }
 /* Loading Logo */
-
+html{
+    scroll-behavior: smooth;
+}
 
 .load-scr{
     position: fixed;
@@ -199,7 +201,7 @@ p{
     background: yellow;
   
    text-align: center;
-   padding-top: 27%;
+   padding-top: 28%;
     bottom: 0;
     position: absolute;
 }
@@ -234,7 +236,39 @@ padding: 10px;
     display: none;
 }
 
+.sec{
+    background: #030303;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    color: #f9f9f9;
+}
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
 
+}
+.mxw800p{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sec .content .mxw800p h3{
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 10px;
+
+}
+.sec .content .mxw800p p{
+position: relative;
+font-size: 18px;
+font-weight: 300;
+margin-bottom: 20px;
+letter-spacing: 1px;
+}
 
 @media(max-width: 700px){
     *{
@@ -301,4 +335,13 @@ margin: 80px 40px;
             width: 60px;
             border-bottom: ridge;
         } 
+        .hero{
+            display: grid;
+        }
+        .sec{
+            display: table;
+        }
+        .sec .content .mxw800p p{
+            display: table-footer-group;
+        }
     }
