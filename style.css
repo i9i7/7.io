@@ -1,0 +1,304 @@
+@font-face{
+    font-family: myFont;
+    src: url('ArbFONTS-Hayah.otf')
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: myFont;
+   
+}
+/* Loading Logo */
+
+
+.load-scr{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+logo{
+    width: 48px;
+    height: 48px;
+}
+.load-bar{
+    width: 140px;
+    height: 2px;
+    background: #ccffcc;
+    margin-top: 22px;
+    position: relative;
+    overflow: hidden;
+    margin-left: -25px;
+}
+.load-bar::before{
+    content: "";
+    width: 68px;
+    height: 2px;
+    background: #0073b1;
+    position: absolute;
+    left: -34px;
+    animation: bluebar 1.5s infinite ease;
+}
+.imand img
+{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px 40px;
+
+}
+p{
+    max-width: 800px;
+    margin: auto;
+    text-align: justify;
+    padding: 0 40px; 
+}
+@keyframes bluebar{
+    50%{
+        left: 96px;
+    }
+}
+
+
+
+.hero{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6))
+    ,url(back.web);
+    background-position: center;
+    
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+
+}
+.nav-bar{
+    display: flex;
+    padding: 40px 120px;
+
+}
+.nav-logo img{
+    width: 60px;
+   
+        border-bottom: ridge;
+}
+.nav-links{
+    flex: 1;
+}
+.nav-links ul{
+    margin-left: 50px;
+   
+    display: inline;
+}
+.nav-links ul li{
+     list-style: none;
+     display: inline-block;
+     padding: 15px 25px;
+     font-size: 20px;
+
+     
+
+
+}
+.nav-links ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.btnt{
+    padding: 5px 20px 10px 20px;
+    border: 0;
+    color: white;
+    background: #464b4e;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btne{
+    padding: 5px 20px 10px 20px;
+    border: 0;
+   background: yellow;
+   font-weight: bold;
+   cursor: pointer;
+   color: black;
+   font-size: 25px;
+}
+.btn{
+    padding: 5px 20px 10px 20px;
+    border: 0;
+   background: yellow;
+   font-weight: bold;
+   cursor: pointer;
+}
+.nav-links .btn{
+    float: left; 
+    font-size: 20px;
+}
+.nav-links .btnt{
+    float: left; 
+    font-size: 20px;
+}
+.banner-title{
+    margin: 80px 130px;
+    color: #fff;
+}
+.banner-title h1{
+    font-size: 64px;
+    margin-bottom: 50px;
+   
+   
+
+}
+.banner-title h1 span{
+    color: yellow;
+
+}
+.vertical-bar{
+    height: 100%;
+    background: #000;
+    top: 0;
+   
+    float: right;
+    position: absolute;
+}
+.search-icon
+{
+    height: 60%;
+    width: 80px;
+}
+.search-icon .fa{
+    margin: 45px 23px 40px 15px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icons{
+    height: 35%;
+  
+    width: 80px;
+    background: yellow;
+  
+   text-align: center;
+   padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+}
+.social-icons .fa{
+    margin:15px 23px;
+    display: block;
+    padding: 8px;
+ border: 1px solid#000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* .notifications{
+   display: flex;
+   width: 400px;
+   right: 0;
+   bottom: 0;
+   position: absolute;
+   background: yellow; 
+   align-items: center;
+}
+.contents{
+flex-basis: 50%;
+padding: 10px;
+
+
+}
+.notification-img{ 
+    flex-basis: 50%;
+} */
+
+.nav-bar .fa{
+    display: none;
+}
+
+
+
+@media(max-width: 700px){
+    *{
+        text-align: center;
+    }
+    .vertical-bar{
+        display: none;
+    }
+ 
+    .social-icons{
+        display: none;
+    }
+        .banner-title{
+margin: 80px 40px;
+        }
+        .banner-title h1{
+            font-size: 50px;
+        }
+        .nav-bar{
+            padding: 10px 30px;
+        }
+        .fa-bars{
+            position: absolute;
+            right: 20px;
+            top: 10px;
+
+        }
+        
+        .nav-bar .fa{
+            display: block;
+            color: #fff;
+            margin: 10px 25px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .nav-links{
+          height: 100vh;
+          width: 200px;
+          background: #000;
+          top: 0;
+          right:-200px;
+          position: absolute; 
+          text-align: left;
+          z-index: 2;
+          transition: 0.5s;
+
+        }
+        .nav-links ul a{
+            display: block;
+            text-align: center;
+      
+        }
+        .nav-links .btn{
+            float: right;
+        
+        }
+          .nav-links .btnt{
+            float: none;
+    font-size: 20px;
+    padding: 5px 10px 10px 20px
+        }
+        .nav-logo img {
+            margin-right: 230px;
+            width: 60px;
+            border-bottom: ridge;
+        } 
+    }

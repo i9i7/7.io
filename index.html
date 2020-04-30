@@ -1,61 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
-    <title>AMMAR NABIL</title>
-    <link rel="stylesheet" href="master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="t.min.js"></script>
+
+    <title>Home Page </title>
 </head>
 <body>
+        <div class="load-scr">
+                <div class="load-anim">
+                    <img src="img/icon.web" alt="" class="logo">
+                    <div class="load-bar"></div>
+        
+                </div>
+            </div>
+    <div class="hero">
+         
+        <div class="nav-bar">
+            <div class="nav-logo">
+                <img src="img/icon.web" alt="">
+             </div>
+           
+            <div class="nav-links" id="nav-links">
+                    <i class="fa fa-close" onclick="cloesMenu()"></i>
+                <ul>
+                    <a href="#"><li>الرئسية</li></a> 
+                    <a href="#"><li>عن القاسمي</li></a>
+                    <a href="#"><li>خدماتنا</li></a>
+                    <a href="#"><li>الأخبار</li></a>
+                    <a href="#"><li>وظائف شاغرة</li></a>
+                    <a href="#"><li>وكلائنا</li></a>
+                    <a href="#"><li>كن وكيلاً</li></a>
+                    <a href="#"><li>مواقعنا</li></a>
+                </ul>
+                <!-- <button type="button" class="btn">الوظائف</button>
+                <button type="button" class="btnt">تسجيل</button> -->
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>  
+            
+        </div> 
+        
+        <div class="banner-title">
+            <h1>شركة <span> القاسمي<br>للصرافة والتحويلات </span>معك ايمنا تكون</h1>
+            <button type="button" class="btne">حول القاسمي</button>
+            
+        </div>
+   
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-th-list"></i>
+                <i class="fa fa-map-marker" ></i>
+            </div>
+            <div class="social-icons">
+                    <i class="fa fa-facebook"></i>   
+                    <i class="fa fa-instagram"></i> 
+                    <i class="fa fa-twitter"></i> 
+                    <i class="fa fa-envelope" ></i>
+            </div>
+            
+        </div>
+        <!--About-->
 
-    <pre id="main">
-      <p><ins><span id="pow-txt">---[Design tuts!]</span></ins>
-<span id="tagline"><p> AMMAR NABI
-   </p> University student <p> in computer and dealing with<p>
-     operating systems <p>including Windows and Linux
-    
-<ins>1.5</ins><br>    It can program in the <p>following languages<p> ​​#C - visual Basic<p> - Html -Css -Asp.net - Java -<p> Android- Linux OS -<p> SQL Server - Orecal Data Bease<br>out there</span><del></del><del id="pow-trigger"></del> 
-</pre>
+        <section>
 
+        </section>
+      
+           
     <script>
-    
-    $('#main').t({
- beep:true,
- caret:'<span style="color:hotpink;">•</span>',
- typing:function(elm,chr){
+            $(window).on("load",function(){
+                $(".load-scr").fadeOut(5000);
+            });
 
-   if(chr.match(/\-trigger/))
-     $('#pow-txt').show().delay(200).fadeOut(0);
-  
- }
-});
-    
-    </script>
+
+        </script>
+        <script>
+        var show=document.getElementById("nav-links");
+function showMenu(){
+    show.style.right="0";
+}
+function cloesMenu(){
+    show.style.right="-200px";
+}
+        </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
